@@ -1,0 +1,6 @@
+framework module Pods_SaryTaskTests {
+  umbrella header "Pods-SaryTaskTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,15 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10A153DBF226781FDB2B3623 /* Pods_SaryTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80F580B4F77B1D209A38F7D0 /* Pods_SaryTaskTests.framework */; };
+		8A3AB1F1281B181B00BE4896 /* ViewModelState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AB1F0281B181B00BE4896 /* ViewModelState.swift */; };
+		8A3AB1F6281B186C00BE4896 /* BaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AB1F5281B186C00BE4896 /* BaseError.swift */; };
+		8A3AB1F9281B18B500BE4896 /* DisposeObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AB1F8281B18B500BE4896 /* DisposeObject.swift */; };
+		8A3AB1FD281B18F300BE4896 /* AlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AB1FC281B18F300BE4896 /* AlertAction.swift */; };
+		8A3AB1FF281B190500BE4896 /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AB1FE281B190500BE4896 /* AlertItem.swift */; };
+		8A3AB202281B193700BE4896 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AB201281B193700BE4896 /* BaseViewController.swift */; };
+		8A3AB207281B19A500BE4896 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AB206281B19A500BE4896 /* AppCoordinator.swift */; };
+		8A3AB209281B19BE00BE4896 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AB208281B19BE00BE4896 /* Coordinator.swift */; };
+		8A3AB20B281B19D000BE4896 /* CoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AB20A281B19D000BE4896 /* CoordinatorDelegate.swift */; };
+		8A3AB20E281B1BDA00BE4896 /* TabbarCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AB20D281B1BDA00BE4896 /* TabbarCoordinatorProtocol.swift */; };
+		8A3AB210281B1BF100BE4896 /* TabbarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AB20F281B1BF100BE4896 /* TabbarCoordinator.swift */; };
+		8A3AB212281B1C0300BE4896 /* TabbarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AB211281B1C0300BE4896 /* TabbarItemView.swift */; };
+		8A3AB215281B1E9200BE4896 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A3AB214281B1E9200BE4896 /* HomeViewController.xib */; };
+		8A3AB218281B1F6100BE4896 /* UITableView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AB217281B1F6100BE4896 /* UITableView+Helpers.swift */; };
+		8A3AB21B281B1F9400BE4896 /* NSObject+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AB21A281B1F9400BE4896 /* NSObject+Helpers.swift */; };
+		8A3AB21E281B1FBA00BE4896 /* View+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AB21D281B1FBA00BE4896 /* View+Helpers.swift */; };
+		8A3AB221281B207400BE4896 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AB220281B207400BE4896 /* HomeViewModel.swift */; };
 		8A8BABA9281ADF3500A46070 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8BABA8281ADF3500A46070 /* AppDelegate.swift */; };
 		8A8BABAB281ADF3500A46070 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8BABAA281ADF3500A46070 /* SceneDelegate.swift */; };
-		8A8BABAD281ADF3500A46070 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8BABAC281ADF3500A46070 /* ViewController.swift */; };
+		8A8BABAD281ADF3500A46070 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8BABAC281ADF3500A46070 /* HomeViewController.swift */; };
 		8A8BABB0281ADF3500A46070 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A8BABAE281ADF3500A46070 /* Main.storyboard */; };
 		8A8BABB2281ADF3700A46070 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A8BABB1281ADF3700A46070 /* Assets.xcassets */; };
 		8A8BABB5281ADF3700A46070 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A8BABB3281ADF3700A46070 /* LaunchScreen.storyboard */; };
 		8A8BABC0281ADF3700A46070 /* SaryTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8BABBF281ADF3700A46070 /* SaryTaskTests.swift */; };
-		8A8BABCA281ADF3700A46070 /* SaryTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8BABC9281ADF3700A46070 /* SaryTaskUITests.swift */; };
-		8A8BABCC281ADF3700A46070 /* SaryTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8BABCB281ADF3700A46070 /* SaryTaskUITestsLaunchTests.swift */; };
+		8A8BABE1281B16A900A46070 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8BABE0281B16A900A46070 /* BaseViewModel.swift */; };
+		F5F10E27FC35165DEFA83925 /* Pods_SaryTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75DD13B665217D1AA7A14ACF /* Pods_SaryTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,29 +44,46 @@
 			remoteGlobalIDString = 8A8BABA4281ADF3500A46070;
 			remoteInfo = SaryTask;
 		};
-		8A8BABC6281ADF3700A46070 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8A8BAB9D281ADF3500A46070 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8A8BABA4281ADF3500A46070;
-			remoteInfo = SaryTask;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2CC378CD71F6F4B851AA23B2 /* Pods_SaryTask_SaryTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaryTask_SaryTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33F881FAD9471E47287D3DD9 /* Pods-SaryTask-SaryTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaryTask-SaryTaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-SaryTask-SaryTaskUITests/Pods-SaryTask-SaryTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6235710004BBAA6DC1069B28 /* Pods-SaryTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaryTask.debug.xcconfig"; path = "Target Support Files/Pods-SaryTask/Pods-SaryTask.debug.xcconfig"; sourceTree = "<group>"; };
+		62D54046D0B1FDC16727C524 /* Pods-SaryTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaryTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-SaryTaskTests/Pods-SaryTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		75DD13B665217D1AA7A14ACF /* Pods_SaryTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaryTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80F580B4F77B1D209A38F7D0 /* Pods_SaryTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaryTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A3AB1F0281B181B00BE4896 /* ViewModelState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelState.swift; sourceTree = "<group>"; };
+		8A3AB1F5281B186C00BE4896 /* BaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseError.swift; sourceTree = "<group>"; };
+		8A3AB1F8281B18B500BE4896 /* DisposeObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisposeObject.swift; sourceTree = "<group>"; };
+		8A3AB1FC281B18F300BE4896 /* AlertAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertAction.swift; sourceTree = "<group>"; };
+		8A3AB1FE281B190500BE4896 /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
+		8A3AB201281B193700BE4896 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		8A3AB206281B19A500BE4896 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		8A3AB208281B19BE00BE4896 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		8A3AB20A281B19D000BE4896 /* CoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorDelegate.swift; sourceTree = "<group>"; };
+		8A3AB20D281B1BDA00BE4896 /* TabbarCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		8A3AB20F281B1BF100BE4896 /* TabbarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarCoordinator.swift; sourceTree = "<group>"; };
+		8A3AB211281B1C0300BE4896 /* TabbarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarItemView.swift; sourceTree = "<group>"; };
+		8A3AB214281B1E9200BE4896 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		8A3AB217281B1F6100BE4896 /* UITableView+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Helpers.swift"; sourceTree = "<group>"; };
+		8A3AB21A281B1F9400BE4896 /* NSObject+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Helpers.swift"; sourceTree = "<group>"; };
+		8A3AB21D281B1FBA00BE4896 /* View+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Helpers.swift"; sourceTree = "<group>"; };
+		8A3AB220281B207400BE4896 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		8A8BABA5281ADF3500A46070 /* SaryTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaryTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A8BABA8281ADF3500A46070 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A8BABAA281ADF3500A46070 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8A8BABAC281ADF3500A46070 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8A8BABAC281ADF3500A46070 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8A8BABAF281ADF3500A46070 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A8BABB1281ADF3700A46070 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A8BABB4281ADF3700A46070 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A8BABB6281ADF3700A46070 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A8BABBB281ADF3700A46070 /* SaryTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaryTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A8BABBF281ADF3700A46070 /* SaryTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaryTaskTests.swift; sourceTree = "<group>"; };
-		8A8BABC5281ADF3700A46070 /* SaryTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaryTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A8BABC9281ADF3700A46070 /* SaryTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaryTaskUITests.swift; sourceTree = "<group>"; };
-		8A8BABCB281ADF3700A46070 /* SaryTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaryTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8A8BABE0281B16A900A46070 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		B87059DCBCC8584BF525EEB3 /* Pods-SaryTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaryTaskTests.release.xcconfig"; path = "Target Support Files/Pods-SaryTaskTests/Pods-SaryTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		D27A908510434AF22E681426 /* Pods-SaryTask-SaryTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaryTask-SaryTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-SaryTask-SaryTaskUITests/Pods-SaryTask-SaryTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DC883002CCF53CF9E31AC334 /* Pods-SaryTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaryTask.release.xcconfig"; path = "Target Support Files/Pods-SaryTask/Pods-SaryTask.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5F10E27FC35165DEFA83925 /* Pods_SaryTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,26 +99,155 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8A8BABC2281ADF3700A46070 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				10A153DBF226781FDB2B3623 /* Pods_SaryTaskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A3AB1F2281B184700BE4896 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8A3AB1F3281B185000BE4896 /* Error */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		8A3AB1F3281B185000BE4896 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				8A3AB1F4281B186100BE4896 /* Entity */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		8A3AB1F4281B186100BE4896 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				8A3AB1F5281B186C00BE4896 /* BaseError.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		8A3AB1F7281B18A700BE4896 /* Dispose */ = {
+			isa = PBXGroup;
+			children = (
+				8A3AB1F8281B18B500BE4896 /* DisposeObject.swift */,
+			);
+			path = Dispose;
+			sourceTree = "<group>";
+		};
+		8A3AB1FA281B18DB00BE4896 /* Reusable Components */ = {
+			isa = PBXGroup;
+			children = (
+				8A3AB1FB281B18E700BE4896 /* Alert */,
+			);
+			path = "Reusable Components";
+			sourceTree = "<group>";
+		};
+		8A3AB1FB281B18E700BE4896 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				8A3AB1FC281B18F300BE4896 /* AlertAction.swift */,
+				8A3AB1FE281B190500BE4896 /* AlertItem.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		8A3AB200281B192D00BE4896 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8A3AB201281B193700BE4896 /* BaseViewController.swift */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		8A3AB203281B197E00BE4896 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				8A3AB204281B198E00BE4896 /* Core */,
+				8A3AB205281B199100BE4896 /* Coordinators */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		8A3AB204281B198E00BE4896 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8A3AB208281B19BE00BE4896 /* Coordinator.swift */,
+				8A3AB20A281B19D000BE4896 /* CoordinatorDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8A3AB205281B199100BE4896 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				8A3AB206281B19A500BE4896 /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		8A3AB20C281B1BCB00BE4896 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				8A3AB20D281B1BDA00BE4896 /* TabbarCoordinatorProtocol.swift */,
+				8A3AB20F281B1BF100BE4896 /* TabbarCoordinator.swift */,
+				8A3AB211281B1C0300BE4896 /* TabbarItemView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		8A3AB213281B1E5C00BE4896 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8A8BABAC281ADF3500A46070 /* HomeViewController.swift */,
+				8A3AB214281B1E9200BE4896 /* HomeViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8A3AB216281B1F5700BE4896 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				8A3AB217281B1F6100BE4896 /* UITableView+Helpers.swift */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		8A3AB219281B1F7B00BE4896 /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				8A3AB21A281B1F9400BE4896 /* NSObject+Helpers.swift */,
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
+		8A3AB21C281B1FB000BE4896 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8A3AB21D281B1FBA00BE4896 /* View+Helpers.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8A3AB21F281B206800BE4896 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8A3AB220281B207400BE4896 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		8A8BAB9C281ADF3500A46070 = {
 			isa = PBXGroup;
 			children = (
 				8A8BABA7281ADF3500A46070 /* SaryTask */,
 				8A8BABBE281ADF3700A46070 /* SaryTaskTests */,
-				8A8BABC8281ADF3700A46070 /* SaryTaskUITests */,
 				8A8BABA6281ADF3500A46070 /* Products */,
+				B77E0D5D91E9779284EF11DE /* Pods */,
+				C0F7550A0CBB8B8007950E3D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,7 +256,6 @@
 			children = (
 				8A8BABA5281ADF3500A46070 /* SaryTask.app */,
 				8A8BABBB281ADF3700A46070 /* SaryTaskTests.xctest */,
-				8A8BABC5281ADF3700A46070 /* SaryTaskUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,11 +263,11 @@
 		8A8BABA7281ADF3500A46070 /* SaryTask */ = {
 			isa = PBXGroup;
 			children = (
-				8A8BABA8281ADF3500A46070 /* AppDelegate.swift */,
-				8A8BABAA281ADF3500A46070 /* SceneDelegate.swift */,
-				8A8BABAC281ADF3500A46070 /* ViewController.swift */,
+				8A8BABDE281B167600A46070 /* Home Module */,
+				8A8BABDA281AE15F00A46070 /* Utilities */,
+				8A8BABD9281AE11F00A46070 /* Resources */,
+				8A8BABD8281AE0F500A46070 /* Application */,
 				8A8BABAE281ADF3500A46070 /* Main.storyboard */,
-				8A8BABB1281ADF3700A46070 /* Assets.xcassets */,
 				8A8BABB3281ADF3700A46070 /* LaunchScreen.storyboard */,
 				8A8BABB6281ADF3700A46070 /* Info.plist */,
 			);
@@ -118,13 +282,103 @@
 			path = SaryTaskTests;
 			sourceTree = "<group>";
 		};
-		8A8BABC8281ADF3700A46070 /* SaryTaskUITests */ = {
+		8A8BABD8281AE0F500A46070 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				8A8BABC9281ADF3700A46070 /* SaryTaskUITests.swift */,
-				8A8BABCB281ADF3700A46070 /* SaryTaskUITestsLaunchTests.swift */,
+				8A8BABA8281ADF3500A46070 /* AppDelegate.swift */,
+				8A8BABAA281ADF3500A46070 /* SceneDelegate.swift */,
 			);
-			path = SaryTaskUITests;
+			path = Application;
+			sourceTree = "<group>";
+		};
+		8A8BABD9281AE11F00A46070 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8A8BABB1281ADF3700A46070 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8A8BABDA281AE15F00A46070 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8A3AB203281B197E00BE4896 /* Navigation */,
+				8A3AB1FA281B18DB00BE4896 /* Reusable Components */,
+				8A3AB1F2281B184700BE4896 /* Networking */,
+				8A8BABDD281AE18300A46070 /* Helpers */,
+				8A8BABDC281AE17F00A46070 /* Constants */,
+				8A8BABDB281AE16C00A46070 /* Bases */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8A8BABDB281AE16C00A46070 /* Bases */ = {
+			isa = PBXGroup;
+			children = (
+				8A3AB200281B192D00BE4896 /* BaseViewController */,
+				8A8BABDF281B169200A46070 /* ViewModel */,
+				8A3AB1F7281B18A700BE4896 /* Dispose */,
+			);
+			path = Bases;
+			sourceTree = "<group>";
+		};
+		8A8BABDC281AE17F00A46070 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		8A8BABDD281AE18300A46070 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8A3AB21C281B1FB000BE4896 /* View */,
+				8A3AB219281B1F7B00BE4896 /* NSObject */,
+				8A3AB216281B1F5700BE4896 /* UITableView */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8A8BABDE281B167600A46070 /* Home Module */ = {
+			isa = PBXGroup;
+			children = (
+				8A3AB21F281B206800BE4896 /* ViewModel */,
+				8A3AB213281B1E5C00BE4896 /* View */,
+				8A3AB20C281B1BCB00BE4896 /* Navigation */,
+			);
+			path = "Home Module";
+			sourceTree = "<group>";
+		};
+		8A8BABDF281B169200A46070 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8A8BABE0281B16A900A46070 /* BaseViewModel.swift */,
+				8A3AB1F0281B181B00BE4896 /* ViewModelState.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B77E0D5D91E9779284EF11DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6235710004BBAA6DC1069B28 /* Pods-SaryTask.debug.xcconfig */,
+				DC883002CCF53CF9E31AC334 /* Pods-SaryTask.release.xcconfig */,
+				33F881FAD9471E47287D3DD9 /* Pods-SaryTask-SaryTaskUITests.debug.xcconfig */,
+				D27A908510434AF22E681426 /* Pods-SaryTask-SaryTaskUITests.release.xcconfig */,
+				62D54046D0B1FDC16727C524 /* Pods-SaryTaskTests.debug.xcconfig */,
+				B87059DCBCC8584BF525EEB3 /* Pods-SaryTaskTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C0F7550A0CBB8B8007950E3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75DD13B665217D1AA7A14ACF /* Pods_SaryTask.framework */,
+				2CC378CD71F6F4B851AA23B2 /* Pods_SaryTask_SaryTaskUITests.framework */,
+				80F580B4F77B1D209A38F7D0 /* Pods_SaryTaskTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,9 +388,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A8BABCF281ADF3700A46070 /* Build configuration list for PBXNativeTarget "SaryTask" */;
 			buildPhases = (
+				185DF27417FE603F763FCBBC /* [CP] Check Pods Manifest.lock */,
 				8A8BABA1281ADF3500A46070 /* Sources */,
 				8A8BABA2281ADF3500A46070 /* Frameworks */,
 				8A8BABA3281ADF3500A46070 /* Resources */,
+				EB49D81A9BCB3C3E79BC97CF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +407,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A8BABD2281ADF3700A46070 /* Build configuration list for PBXNativeTarget "SaryTaskTests" */;
 			buildPhases = (
+				E9A280BBE616B9FBD0891063 /* [CP] Check Pods Manifest.lock */,
 				8A8BABB7281ADF3700A46070 /* Sources */,
 				8A8BABB8281ADF3700A46070 /* Frameworks */,
 				8A8BABB9281ADF3700A46070 /* Resources */,
@@ -164,24 +421,6 @@
 			productName = SaryTaskTests;
 			productReference = 8A8BABBB281ADF3700A46070 /* SaryTaskTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		8A8BABC4281ADF3700A46070 /* SaryTaskUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8A8BABD5281ADF3700A46070 /* Build configuration list for PBXNativeTarget "SaryTaskUITests" */;
-			buildPhases = (
-				8A8BABC1281ADF3700A46070 /* Sources */,
-				8A8BABC2281ADF3700A46070 /* Frameworks */,
-				8A8BABC3281ADF3700A46070 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8A8BABC7281ADF3700A46070 /* PBXTargetDependency */,
-			);
-			name = SaryTaskUITests;
-			productName = SaryTaskUITests;
-			productReference = 8A8BABC5281ADF3700A46070 /* SaryTaskUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -197,10 +436,6 @@
 						CreatedOnToolsVersion = 13.0;
 					};
 					8A8BABBA281ADF3700A46070 = {
-						CreatedOnToolsVersion = 13.0;
-						TestTargetID = 8A8BABA4281ADF3500A46070;
-					};
-					8A8BABC4281ADF3700A46070 = {
 						CreatedOnToolsVersion = 13.0;
 						TestTargetID = 8A8BABA4281ADF3500A46070;
 					};
@@ -221,7 +456,6 @@
 			targets = (
 				8A8BABA4281ADF3500A46070 /* SaryTask */,
 				8A8BABBA281ADF3700A46070 /* SaryTaskTests */,
-				8A8BABC4281ADF3700A46070 /* SaryTaskUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -234,6 +468,7 @@
 				8A8BABB5281ADF3700A46070 /* LaunchScreen.storyboard in Resources */,
 				8A8BABB2281ADF3700A46070 /* Assets.xcassets in Resources */,
 				8A8BABB0281ADF3500A46070 /* Main.storyboard in Resources */,
+				8A3AB215281B1E9200BE4896 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,22 +479,96 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A8BABC3281ADF3700A46070 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		185DF27417FE603F763FCBBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SaryTask-checkManifestLockResult.txt",
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
-/* End PBXResourcesBuildPhase section */
+		E9A280BBE616B9FBD0891063 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SaryTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB49D81A9BCB3C3E79BC97CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SaryTask/Pods-SaryTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SaryTask/Pods-SaryTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SaryTask/Pods-SaryTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8A8BABA1281ADF3500A46070 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A8BABAD281ADF3500A46070 /* ViewController.swift in Sources */,
+				8A3AB207281B19A500BE4896 /* AppCoordinator.swift in Sources */,
+				8A3AB1F1281B181B00BE4896 /* ViewModelState.swift in Sources */,
+				8A3AB1F6281B186C00BE4896 /* BaseError.swift in Sources */,
+				8A3AB221281B207400BE4896 /* HomeViewModel.swift in Sources */,
+				8A3AB1FD281B18F300BE4896 /* AlertAction.swift in Sources */,
+				8A8BABAD281ADF3500A46070 /* HomeViewController.swift in Sources */,
+				8A3AB218281B1F6100BE4896 /* UITableView+Helpers.swift in Sources */,
+				8A3AB212281B1C0300BE4896 /* TabbarItemView.swift in Sources */,
+				8A3AB1F9281B18B500BE4896 /* DisposeObject.swift in Sources */,
+				8A3AB202281B193700BE4896 /* BaseViewController.swift in Sources */,
+				8A8BABE1281B16A900A46070 /* BaseViewModel.swift in Sources */,
+				8A3AB21E281B1FBA00BE4896 /* View+Helpers.swift in Sources */,
+				8A3AB209281B19BE00BE4896 /* Coordinator.swift in Sources */,
 				8A8BABA9281ADF3500A46070 /* AppDelegate.swift in Sources */,
+				8A3AB20B281B19D000BE4896 /* CoordinatorDelegate.swift in Sources */,
+				8A3AB1FF281B190500BE4896 /* AlertItem.swift in Sources */,
+				8A3AB20E281B1BDA00BE4896 /* TabbarCoordinatorProtocol.swift in Sources */,
+				8A3AB21B281B1F9400BE4896 /* NSObject+Helpers.swift in Sources */,
+				8A3AB210281B1BF100BE4896 /* TabbarCoordinator.swift in Sources */,
 				8A8BABAB281ADF3500A46070 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,15 +581,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A8BABC1281ADF3700A46070 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8A8BABCC281ADF3700A46070 /* SaryTaskUITestsLaunchTests.swift in Sources */,
-				8A8BABCA281ADF3700A46070 /* SaryTaskUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -288,11 +588,6 @@
 			isa = PBXTargetDependency;
 			target = 8A8BABA4281ADF3500A46070 /* SaryTask */;
 			targetProxy = 8A8BABBC281ADF3700A46070 /* PBXContainerItemProxy */;
-		};
-		8A8BABC7281ADF3700A46070 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8A8BABA4281ADF3500A46070 /* SaryTask */;
-			targetProxy = 8A8BABC6281ADF3700A46070 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -434,11 +729,13 @@
 		};
 		8A8BABD0281ADF3700A46070 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6235710004BBAA6DC1069B28 /* Pods-SaryTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KXJ7S8T94V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SaryTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -461,11 +758,13 @@
 		};
 		8A8BABD1281ADF3700A46070 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC883002CCF53CF9E31AC334 /* Pods-SaryTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KXJ7S8T94V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SaryTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -488,6 +787,7 @@
 		};
 		8A8BABD3281ADF3700A46070 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62D54046D0B1FDC16727C524 /* Pods-SaryTaskTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +812,7 @@
 		};
 		8A8BABD4281ADF3700A46070 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B87059DCBCC8584BF525EEB3 /* Pods-SaryTaskTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -531,50 +832,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SaryTask.app/SaryTask";
-			};
-			name = Release;
-		};
-		8A8BABD6281ADF3700A46070 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sarytask.SaryTaskUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SaryTask;
-			};
-			name = Debug;
-		};
-		8A8BABD7281ADF3700A46070 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sarytask.SaryTaskUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SaryTask;
 			};
 			name = Release;
 		};
@@ -604,15 +861,6 @@
 			buildConfigurations = (
 				8A8BABD3281ADF3700A46070 /* Debug */,
 				8A8BABD4281ADF3700A46070 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8A8BABD5281ADF3700A46070 /* Build configuration list for PBXNativeTarget "SaryTaskUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8A8BABD6281ADF3700A46070 /* Debug */,
-				8A8BABD7281ADF3700A46070 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
