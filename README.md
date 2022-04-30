@@ -6,7 +6,7 @@ A B2B Market place
 
 <br />
 
-<img src="ScreenShots/first.png" width="250"> <img src="ScreenShots/second .png" width="250">
+<img src="ScreenShots/first.png" width="250"> <img src="ScreenShots/second.png" width="250">
 
     
 ## Consist Of
