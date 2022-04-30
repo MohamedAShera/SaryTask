@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import UIKit
 
 // MARK: - Variables
 extension String {
@@ -127,10 +126,6 @@ extension String {
     
     func removeWhitespace() -> String {
         return self.replace(" ", with: "")
-    }
-    
-    func copyToClipboard() {
-        UIPasteboard.general.string = self
     }
     
     func getStringIndex(index: Int) -> String.Index {

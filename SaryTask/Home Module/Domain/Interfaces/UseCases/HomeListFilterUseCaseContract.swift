@@ -8,5 +8,5 @@
 import RxSwift
 
 protocol HomeListFilterUseCaseContract {
-    func execute(from response: [HomeRepresentable]) -> [HomeRepresentable]
+    func execute(using response: [HomeRepresentable]) -> [HomeRepresentable]
 }

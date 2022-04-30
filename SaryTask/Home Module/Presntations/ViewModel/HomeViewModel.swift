@@ -8,9 +8,9 @@
 import RxSwift
 
 final class HomeViewModel: HomeViewModelContract {
-    private var fetchBannersUseCase: FetchBannerUseCaseContract
-    private var fetchHomeListUseCase: FetchHomeListUseCaseContract
-    private var homeListFilterUseCase: HomeListFilterUseCaseContract
+    private let fetchBannersUseCase: FetchBannerUseCaseContract
+    private let fetchHomeListUseCase: FetchHomeListUseCaseContract
+    private let homeListFilterUseCase: HomeListFilterUseCaseContract
     
     private(set) var sections: BehaviorSubject<[HomeSectionRowItem]>
     private(set) var banner: BehaviorSubject<[HomeRepresentable]>
@@ -57,8 +57,7 @@ extension HomeViewModel {
         )
             .subscribe(onNext: { [weak self] bannerResult, homeResult  in
                 guard let self = self else { return }
-                self.handleOnCompleteFetchingHomeData(using: homeResult)
-                self.handleOnCompleteFetchingHomeData(using: bannerResult)
+                self.handleOnCompleteFetchingHomeData(using: homeResult, and: bannerResult)
             })
             .disposed(by: disposeBag)
     }
@@ -72,32 +71,29 @@ extension HomeViewModel {
 
 private extension HomeViewModel {
     func handleOnCompleteFetchingHomeData(
-        using homeResult: Result<HomeResponse, BaseError>
+        using homeResult: Result<HomeResponse, BaseError>,
+        and bannerResult: Result<HomeResponse, BaseError>
     ) {
         guard
-            case let .success(homeData) = homeResult
-        else {
-            // present error
-            return
-        }
-        
-        let homeList: [HomeRepresentable] = homeListFilterUseCase.execute(from: homeData.result ?? [])
-        let sectionItems: [HomeSectionRowData] = homeList.map({.init(smartSubject: $0.rowItems, sectionData: $0)})
-        
-        sections.onNext([ .init(items: sectionItems) ])
-    }
-    
-    func handleOnCompleteFetchingBannerData(
-        using bannerResult: Result<HomeResponse, BaseError>
-    ) {
-        guard
+            case let .success(homeData) = homeResult,
             case let .success(bannerResponse) = bannerResult
         else {
             // present error
             return
         }
         
+        let homeList: [HomeRepresentable] = homeListFilterUseCase
+            .execute(
+                using: homeData.result ?? []
+            )
+        
+        let sectionItems: [HomeSectionRowData] = homeList.map({
+            .init(smartSubject: $0.rowItems, sectionData: $0)
+        })
+        
         let banners: [HomeRepresentable] = bannerResponse.result ?? []
+        
         banner.onNext(banners)
+        sections.onNext([ .init(items: sectionItems) ])
     }
 }

@@ -15,16 +15,19 @@ class HomeViewController: BaseViewController, AlertDisplayerProtocol {
     private var viewModel = HomeViewModel()
     weak var coordinator: TabbarCoordinator?
     
+    private var heightForHeaderInSection: CGFloat {
+        160
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         bindAlert(to: viewModel.alertItemRelay)
         setupTableView()
         viewModel.fetchHomeData()
     }
-    
 }
 
-// MARK: - Private Methods for  setup table view
+// MARK: - Private Methods
 
 private extension HomeViewController {
     typealias TableViewdataSource = RxTableViewSectionedReloadDataSource
@@ -52,11 +55,11 @@ private extension HomeViewController {
     
     func createTableViewDataSource() -> TableViewdataSource<HomeSectionRowItem> {
         return TableViewdataSource<HomeSectionRowItem>(configureCell: { dataSource, tableView, indexPath, item -> UITableViewCell in
-            self.handeltableViewNibs(for: indexPath, and: item)
+            return self.getCell(for: indexPath, and: item)
         })
     }
     
-    func handeltableViewNibs(for indexPath: IndexPath, and item: HomeSectionRowItem.Item) -> UITableViewCell {
+    func getCell(for indexPath: IndexPath, and item: HomeSectionRowItem.Item) -> UITableViewCell {
         let cellData = self.viewModel.getSectionData(for: indexPath.row)
         
         switch cellData?.sectionData.homeDataType {
@@ -66,6 +69,7 @@ private extension HomeViewController {
             item.smartSubject
                 .bind(to: cell.smartSubject)
                 .disposed(by: self.disposeBag)
+            
             return cell
             
         case .group:
@@ -74,6 +78,7 @@ private extension HomeViewController {
             item.smartSubject
                 .bind(to: cell.smartSubject)
                 .disposed(by: self.disposeBag)
+            
             return cell
             
         case .smart :
@@ -96,21 +101,20 @@ extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = SliderTableViewCell.fromNib()
         
-        if let banners = try? viewModel.banner.value() {
-            headerView.loadData(sliderImage: banners)
-            headerView.delegate = self
-        }
+        guard let banners = try? viewModel.banner.value() else { return headerView }
+        headerView.loadData(sliderImage: banners)
+        headerView.delegate = self
+        
         return headerView
     }
+    
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 160
-    }
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        UITableView.automaticDimension
+        return heightForHeaderInSection
     }
 }
 
 // MARK: - Banner Action
+
 extension HomeViewController: SliderDelegate {
     func didSelectBannerItem(_ image: HomeRepresentable, didSelectItemAt index: Int) {
         viewModel.showAlert(for: image.bannerLink)
