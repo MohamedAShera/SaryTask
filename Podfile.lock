@@ -1,5 +1,23 @@
 PODS:
+  - CHIPageControl (0.2):
+    - CHIPageControl/Aji (= 0.2)
+    - CHIPageControl/Aleppo (= 0.2)
+    - CHIPageControl/Chimayo (= 0.2)
+    - CHIPageControl/Fresno (= 0.2)
+    - CHIPageControl/Jalapeno (= 0.2)
+    - CHIPageControl/Jaloro (= 0.2)
+    - CHIPageControl/Paprika (= 0.2)
+    - CHIPageControl/Puya (= 0.2)
+  - CHIPageControl/Aji (0.2)
+  - CHIPageControl/Aleppo (0.2)
+  - CHIPageControl/Chimayo (0.2)
+  - CHIPageControl/Fresno (0.2)
+  - CHIPageControl/Jalapeno (0.2)
+  - CHIPageControl/Jaloro (0.2)
+  - CHIPageControl/Paprika (0.2)
+  - CHIPageControl/Puya (0.2)
   - Differentiator (5.0.0)
+  - FSPagerView (0.8.3)
   - RxCocoa (6.5.0):
     - RxRelay (= 6.5.0)
     - RxSwift (= 6.5.0)
@@ -15,6 +33,8 @@ PODS:
   - SDWebImage/Core (5.12.1)
 
 DEPENDENCIES:
+  - CHIPageControl
+  - FSPagerView
   - RxCocoa (= 6.5.0)
   - RxDataSources
   - RxSwift (= 6.5.0)
@@ -22,7 +42,9 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - CHIPageControl
     - Differentiator
+    - FSPagerView
     - RxCocoa
     - RxDataSources
     - RxRelay
@@ -30,13 +52,15 @@ SPEC REPOS:
     - SDWebImage
 
 SPEC CHECKSUMS:
+  CHIPageControl: a787bf7205c9b7e7fbfc412be36c5e8636b68f86
   Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
+  FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
   RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   SDWebImage: 4dc3e42d9ec0c1028b960a33ac6b637bb432207b
 
-PODFILE CHECKSUM: 7f48564510aae664c096ef8d80ed83c923dd5d0b
+PODFILE CHECKSUM: 227390cd18294807d09c24f138b9528ee494c436
 
 COCOAPODS: 1.11.2

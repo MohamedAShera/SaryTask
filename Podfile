@@ -8,6 +8,8 @@ target 'SaryTask' do
   pod 'RxCocoa', '6.5.0'
   pod 'SDWebImage'
   pod 'RxDataSources'
+  pod 'FSPagerView'
+  pod 'CHIPageControl'
   # Pods for SaryTask
   
   target 'SaryTaskTests' do

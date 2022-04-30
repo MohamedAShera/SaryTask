@@ -26,5 +26,39 @@ extension UIView {
             else { fatalError("view of type \(Self.self) not found in \(nib)") }
         return view
     }
+    
+    @IBInspectable var shadowOpacity: Float {
+        get {
+            return layer.shadowOpacity
+        }
+        set {
+            layer.shadowOpacity = newValue
+        }
+    }
+    
+    @IBInspectable var cornerRadius: CGFloat {
+        get {
+            return layer.cornerRadius
+        }
+        set {
+            if self.layer.shadowOpacity > 0 {
+               layer.masksToBounds = false
+            } else {
+                layer.masksToBounds = true
+            }
+
+            layer.cornerRadius = abs(CGFloat(Int(newValue * 100)) / 100)
+        }
+    }
+    
+    func addShadow(ofColor color: UIColor = UIColor.black,
+                   radius: CGFloat = 10, offset: CGSize = .zero, opacity: Float = 0.2) {
+        layer.shadowColor = color.cgColor
+        layer.shadowOffset = offset
+        layer.shadowRadius = radius
+        layer.shadowOpacity = opacity
+        layer.masksToBounds = false
+    }
+    
 }
 

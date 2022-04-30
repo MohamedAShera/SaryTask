@@ -17,9 +17,9 @@ final class AppCoordinator: Coordinator {
     }
     
     func start() {
-        let splashCoordinator = TabbarCoordinator(navigationController)
-        childCoordinators.append(splashCoordinator)
-        splashCoordinator.start()
+        let tabbarCoordinator = TabbarCoordinator(navigationController)
+        childCoordinators.append(tabbarCoordinator)
+        tabbarCoordinator.start()
     }
 }
 
