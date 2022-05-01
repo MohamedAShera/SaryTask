@@ -18,34 +18,22 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qJt-ar-BDE">
-                        <rect key="frame" x="0.0" y="8" width="320" height="340"/>
+                        <rect key="frame" x="16" y="36.5" width="288" height="283"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S7L-QB-dEb">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="QQJ-js-3g6">
+                                <rect key="frame" x="0.0" y="0.0" width="288" height="23"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="QQJ-js-3g6">
-                                        <rect key="frame" x="16" y="0.0" width="288" height="80"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nfx-YA-RD8">
-                                                <rect key="frame" x="0.0" y="30" width="288" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nfx-YA-RD8">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="QQJ-js-3g6" firstAttribute="top" secondItem="S7L-QB-dEb" secondAttribute="top" id="8Mh-LR-igx"/>
-                                    <constraint firstItem="QQJ-js-3g6" firstAttribute="leading" secondItem="S7L-QB-dEb" secondAttribute="leading" constant="16" id="Jp3-OC-HAd"/>
-                                    <constraint firstItem="QQJ-js-3g6" firstAttribute="centerX" secondItem="S7L-QB-dEb" secondAttribute="centerX" id="iSO-J4-jhc"/>
-                                    <constraint firstItem="QQJ-js-3g6" firstAttribute="centerY" secondItem="S7L-QB-dEb" secondAttribute="centerY" id="o8m-ii-AQa"/>
-                                </constraints>
-                            </view>
+                            </stackView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="F2R-iA-atF">
-                                <rect key="frame" x="0.0" y="88" width="320" height="252"/>
+                                <rect key="frame" x="0.0" y="31" width="288" height="252"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="252" id="9Ib-IP-QUC"/>
@@ -64,8 +52,8 @@
                 <constraints>
                     <constraint firstItem="qJt-ar-BDE" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="BN7-Eo-uPf"/>
                     <constraint firstItem="qJt-ar-BDE" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="HvS-Ev-ViW"/>
-                    <constraint firstItem="qJt-ar-BDE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Ubu-UG-Bzm"/>
-                    <constraint firstItem="qJt-ar-BDE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="gA0-jV-XW7"/>
+                    <constraint firstItem="qJt-ar-BDE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Ubu-UG-Bzm"/>
+                    <constraint firstItem="qJt-ar-BDE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="gA0-jV-XW7"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -74,7 +62,7 @@
                 <outlet property="collectionView" destination="F2R-iA-atF" id="sBI-0h-buA"/>
                 <outlet property="collectionViewHeight" destination="9Ib-IP-QUC" id="x4P-UM-J1e"/>
                 <outlet property="titleLabel" destination="Nfx-YA-RD8" id="cDD-eg-VIJ"/>
-                <outlet property="titleView" destination="S7L-QB-dEb" id="Cpu-VB-1IZ"/>
+                <outlet property="titleStack" destination="QQJ-js-3g6" id="4qR-JH-LpI"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="100.44642857142857"/>
         </tableViewCell>

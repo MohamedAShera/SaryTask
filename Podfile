@@ -9,6 +9,7 @@ target 'SaryTask' do
   pod 'SDWebImage'
   pod 'RxDataSources'
   pod 'FSPagerView'
+  pod 'NVActivityIndicatorView/AppExtension'
   pod 'CHIPageControl'
   # Pods for SaryTask
   

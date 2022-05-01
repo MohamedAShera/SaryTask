@@ -24,7 +24,7 @@ class HomeRepositoryTest: XCTestCase {
         super.tearDown()
     }
     
-    func testSUT_whenFetchHometIsCalled_dataAreRecieved() {
+    func testSUT_whenFetchHomeIsCalled_dataAreRecieved() {
         // Given
         let exp = expectation(description: expectationDesc)
         
@@ -33,6 +33,23 @@ class HomeRepositoryTest: XCTestCase {
             .subscribe(onNext: { homeResult  in
                 exp.fulfill()
                 XCTAssertNotNil(homeResult)
+                
+            })
+            .disposed(by: sut.disposeBag)
+
+        // Then
+        waitForExpectations(timeout: 1.0)
+    }
+    
+    func testSUT_whenFetchBannerIsCalled_dataAreRecieved() {
+        // Given
+        let exp = expectation(description: expectationDesc)
+        
+        // When
+         sut.getBanners()
+            .subscribe(onNext: { bannerResult  in
+                exp.fulfill()
+                XCTAssertNotNil(bannerResult)
                 
             })
             .disposed(by: sut.disposeBag)

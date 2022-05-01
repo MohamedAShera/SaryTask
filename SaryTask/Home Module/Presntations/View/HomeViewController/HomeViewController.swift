@@ -9,7 +9,7 @@ import UIKit
 import RxCocoa
 import RxDataSources
 
-class HomeViewController: BaseViewController, AlertDisplayerProtocol {
+class HomeViewController: BaseViewController, AlertDisplayerProtocol, LoadingDisplayerProtocol {
     @IBOutlet weak var tableView: UITableView!
     
     private var viewModel = HomeViewModel()
@@ -21,6 +21,7 @@ class HomeViewController: BaseViewController, AlertDisplayerProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        bindLoadingIndicator(to: viewModel.stateRelay)
         bindAlert(to: viewModel.alertItemRelay)
         setupTableView()
         viewModel.fetchHomeData()
@@ -111,6 +112,10 @@ extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return heightForHeaderInSection
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        UITableView.automaticDimension
+    }
 }
 
 // MARK: - Banner Action
@@ -120,3 +125,4 @@ extension HomeViewController: SliderDelegate {
         viewModel.showAlert(for: image.bannerLink)
     }
 }
+

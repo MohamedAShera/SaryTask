@@ -11,7 +11,6 @@ import RxDataSources
 
 class SmartTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var titleImage: AsyncImageView!
     @IBOutlet weak var titleStack: UIStackView!
     @IBOutlet weak var collectionView: UICollectionView!
     

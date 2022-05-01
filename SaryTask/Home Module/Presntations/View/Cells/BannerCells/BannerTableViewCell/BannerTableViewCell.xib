@@ -18,41 +18,22 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yK8-B5-CNc">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="165"/>
+                        <rect key="frame" x="16" y="16" width="288" height="133"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uOZ-rs-6H1">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="57"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="MZ3-ty-ei7">
+                                <rect key="frame" x="0.0" y="0.0" width="288" height="25"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="MZ3-ty-ei7">
-                                        <rect key="frame" x="16" y="18.5" width="288" height="20.5"/>
-                                        <subviews>
-                                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IhH-2k-dzL" customClass="AsyncImageView" customModule="SaryTask" customModuleProvider="target">
-                                                <rect key="frame" x="-28" y="-0.5" width="28" height="21"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="28" id="91X-kH-Nm9"/>
-                                                    <constraint firstAttribute="height" constant="21" id="pTi-ug-Hgt"/>
-                                                </constraints>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84h-Vt-6t0">
-                                                <rect key="frame" x="0.0" y="0.0" width="288" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84h-Vt-6t0">
+                                        <rect key="frame" x="0.0" y="1" width="288" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="MZ3-ty-ei7" firstAttribute="centerY" secondItem="uOZ-rs-6H1" secondAttribute="centerY" id="6Bz-EO-L8h"/>
-                                    <constraint firstItem="MZ3-ty-ei7" firstAttribute="centerX" secondItem="uOZ-rs-6H1" secondAttribute="centerX" id="Nm5-7e-UHR"/>
-                                    <constraint firstItem="MZ3-ty-ei7" firstAttribute="leading" secondItem="uOZ-rs-6H1" secondAttribute="leading" constant="16" id="cn5-kt-8jC"/>
-                                    <constraint firstItem="MZ3-ty-ei7" firstAttribute="top" relation="greaterThanOrEqual" secondItem="uOZ-rs-6H1" secondAttribute="top" id="ik3-3o-gfr"/>
-                                </constraints>
-                            </view>
+                            </stackView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="xiU-f2-3BI">
-                                <rect key="frame" x="0.0" y="65" width="320" height="100"/>
+                                <rect key="frame" x="0.0" y="33" width="288" height="100"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="a3h-sD-enk"/>
@@ -68,9 +49,9 @@
                     </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="yK8-B5-CNc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="L5c-HT-7xf"/>
+                    <constraint firstItem="yK8-B5-CNc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="L5c-HT-7xf"/>
                     <constraint firstItem="yK8-B5-CNc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="OH3-zK-g3L"/>
-                    <constraint firstItem="yK8-B5-CNc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Smq-lV-y2a"/>
+                    <constraint firstItem="yK8-B5-CNc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="Smq-lV-y2a"/>
                     <constraint firstItem="yK8-B5-CNc" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="txc-e2-xJp"/>
                 </constraints>
             </tableViewCellContentView>
@@ -79,9 +60,8 @@
             <connections>
                 <outlet property="collectionHeight" destination="a3h-sD-enk" id="ofp-3l-8Ea"/>
                 <outlet property="collectionView" destination="xiU-f2-3BI" id="UVm-2h-mp9"/>
-                <outlet property="titleImage" destination="IhH-2k-dzL" id="Bwy-GB-WHt"/>
                 <outlet property="titleLabel" destination="84h-Vt-6t0" id="m1T-UY-aPi"/>
-                <outlet property="titleView" destination="uOZ-rs-6H1" id="Ri8-LN-mou"/>
+                <outlet property="titleStack" destination="84h-Vt-6t0" id="UYa-8y-G9g"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="154.35267857142856"/>
         </tableViewCell>

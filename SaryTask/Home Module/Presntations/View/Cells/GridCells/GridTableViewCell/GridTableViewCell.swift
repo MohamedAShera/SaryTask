@@ -12,7 +12,7 @@ import RxDataSources
 
 class GridTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var titleView: UIView!
+    @IBOutlet weak var titleStack: UIStackView!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var collectionViewHeight: NSLayoutConstraint!
      
@@ -28,22 +28,23 @@ class GridTableViewCell: UITableViewCell {
     
     func loadCell(cellData: HomeSectionRowData?) {
         let cellData = cellData?.sectionData
-        titleView.isHidden = cellData?.isTitleHidden ?? false
+        titleStack.isHidden = cellData?.isTitleHidden ?? false
         titleLabel.text = cellData?.itemTitle
         if let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             layout.scrollDirection = cellData?.homeUIType == .grid ? .vertical : .horizontal
         }
-        customizeCollectionBaseOnHomeUIType(cellData: cellData)
         numberOfItemInList = CGFloat(cellData?.numberOfItemInList ?? 1)
-        
+        customizeCollectionBaseOnHomeUIType(cellData: cellData)
+        collectionView.layoutIfNeeded()
     }
     
     private func customizeCollectionBaseOnHomeUIType(cellData: HomeRepresentable?) {
         switch cellData?.homeUIType {
         case .slider, .linear:
+            collectionView.isScrollEnabled = true
             numberOfItemPerRow =  CGFloat(cellData?.numberOfRow ?? 1)
             collectionViewHeight.constant = 140
-            collectionView.isScrollEnabled = true
+            
         default:
             collectionView.isScrollEnabled = false
             numberOfItemPerRow = CGFloat(cellData?.numberOfRow ?? 1)

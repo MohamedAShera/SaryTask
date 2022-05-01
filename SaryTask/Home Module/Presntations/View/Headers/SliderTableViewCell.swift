@@ -58,8 +58,7 @@ extension SliderTableViewCell: FSPagerViewDataSource {
         cell.cornerRadius = 20
         
         guard !sliderImage.isEmpty else { return cell}
-        
-        cell.imageView?.sd_setImage(with: URL(string: sliderImage[index].bannerImage), completed: nil)
+        cell.imageView?.sd_setImage(with: URL(string: sliderImage[index].bannerImage), placeholderImage: UIImage.General.placeholder)
         cell.imageView?.contentMode = .scaleAspectFill
         pagger.set(progress: index, animated: true)
         

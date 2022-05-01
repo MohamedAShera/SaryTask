@@ -48,6 +48,8 @@ extension HomeViewModel {
 
 extension HomeViewModel {
     func fetchHomeData() {
+        stateRelay.accept(.loading)
+        
         let fetchHomeObservable = fetchHomeListUseCase.execute()
         let fetchBannerObservable = fetchBannersUseCase.execute()
         
@@ -74,6 +76,7 @@ private extension HomeViewModel {
         using homeResult: Result<HomeResponse, BaseError>,
         and bannerResult: Result<HomeResponse, BaseError>
     ) {
+        stopLoading()
         guard
             case let .success(homeData) = homeResult,
             case let .success(bannerResponse) = bannerResult
@@ -95,5 +98,7 @@ private extension HomeViewModel {
         
         banner.onNext(banners)
         sections.onNext([ .init(items: sectionItems) ])
+        
+        stateRelay.accept(.successful)
     }
 }

@@ -9,7 +9,6 @@ import RxSwift
 
 final class HomeListFilterUseCase: HomeListFilterUseCaseContract {
     func execute(using response: [HomeRepresentable]) -> [HomeRepresentable] {
-        
         return response.filter({$0.homeDataType != .empty})
     }
 }

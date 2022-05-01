@@ -31,6 +31,5 @@ class AsyncImageView: UIImageView {
     
     func setImage(using url: String?) {
         sd_setImage(with: URL(string: url.value), placeholderImage: UIImage.General.placeholder)
-//        sd_setImage(with: URL(string: url.value), completed: nil)
     }
 }

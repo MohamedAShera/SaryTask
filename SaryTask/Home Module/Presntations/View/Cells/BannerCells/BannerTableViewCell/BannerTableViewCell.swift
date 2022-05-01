@@ -12,8 +12,7 @@ import RxDataSources
 
 class BannerTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var titleImage: AsyncImageView!
-    @IBOutlet weak var titleView: UIView!
+    @IBOutlet weak var titleStack: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var collectionHeight: NSLayoutConstraint!
     
@@ -29,7 +28,7 @@ class BannerTableViewCell: UITableViewCell {
     
     func loadCell(cellData: HomeSectionRowData?) {
         let cellData = cellData?.sectionData
-        titleView.isHidden = cellData?.isTitleHidden ?? false
+        titleStack.isHidden = cellData?.isTitleHidden ?? false
         titleLabel.text = cellData?.itemTitle
         if let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             layout.scrollDirection = cellData?.homeUIType == .grid ?  .vertical : .horizontal
