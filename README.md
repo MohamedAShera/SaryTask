@@ -8,8 +8,9 @@ A B2B Market place
 
 <img src="ScreenShots/1.png" width="250"> <img src="ScreenShots/2.png" width="250"> <img src="ScreenShots/3.png" width="250">
 
-[![app demo](https://www.creativetools.se/image/cache/catalog/product/adobe/adobe-stock/Adobe-Stock-2020-Logo-1280x720.jpg)](https://youtube.com/shorts/c0wLS3LxFhQ)
-    
+https://user-images.githubusercontent.com/48877943/166127396-93d30a76-4cab-46cc-a40a-03e0c97e3071.mp4
+
+
 ## Consist Of
 - Home Dashboard Screen
 
