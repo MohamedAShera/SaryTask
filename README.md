@@ -28,6 +28,7 @@ https://user-images.githubusercontent.com/48877943/166127396-93d30a76-4cab-46cc-
 - FSPagerView for page slider
 - SDWebImage for image caching
 - RxSwift/RXCocoa
+- NVActivityIndicatorView/AppExtension for loader
 
 ## Requirements
 - iOS 11.0 or later.
